@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,44 +19,47 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassId.h" />
-    <ClInclude Include="Client.h" />
-    <ClInclude Include="ClientState.h" />
-    <ClInclude Include="Engine.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="GlowObjectDefinition.h" />
-    <ClInclude Include="GlowObjectManager.h" />
-    <ClInclude Include="GlowStyle.h" />
-    <ClInclude Include="gui.h" />
-    <ClInclude Include="imgui\imconfig.h" />
-    <ClInclude Include="imgui\imgui.h" />
-    <ClInclude Include="imgui\imgui_impl_dx9.h" />
-    <ClInclude Include="imgui\imgui_impl_win32.h" />
-    <ClInclude Include="imgui\imgui_internal.h" />
-    <ClInclude Include="imgui\imstb_rectpack.h" />
-    <ClInclude Include="imgui\imstb_textedit.h" />
-    <ClInclude Include="imgui\imstb_truetype.h" />
-    <ClInclude Include="Vector.h" />
+    <ClInclude Include="CDK\Client\ClassId.h" />
+    <ClInclude Include="CDK\Client\Client.h" />
+    <ClInclude Include="CDK\Client\Entity.h" />
+    <ClInclude Include="CDK\Client\GlowObjectDefinition.h" />
+    <ClInclude Include="CDK\Client\GlowObjectManager.h" />
+    <ClInclude Include="CDK\Client\GlowStyle.h" />
+    <ClInclude Include="CDK\Client\LocalPlayer.h" />
+    <ClInclude Include="CDK\Client\Player.h" />
+    <ClInclude Include="CDK\Client\Team.h" />
+    <ClInclude Include="CDK\Engine\ClientState.h" />
+    <ClInclude Include="CDK\Engine\Engine.h" />
+    <ClInclude Include="CDK\Engine\State.h" />
+    <ClInclude Include="lib\font.h" />
     <ClInclude Include="Includer.h" />
-    <ClInclude Include="LocalPlayer.h" />
-    <ClInclude Include="Memory.h" />
-    <ClInclude Include="Modules.h" />
-    <ClInclude Include="Offsets.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="State.h" />
-    <ClInclude Include="Team.h" />
-    <ClInclude Include="WeaponsId.h" />
+    <ClInclude Include="lib\gui.h" />
+    <ClInclude Include="lib\imgui\imconfig.h" />
+    <ClInclude Include="lib\imgui\imgui.h" />
+    <ClInclude Include="lib\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="lib\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="lib\imgui\imgui_internal.h" />
+    <ClInclude Include="lib\imgui\imstb_rectpack.h" />
+    <ClInclude Include="lib\imgui\imstb_textedit.h" />
+    <ClInclude Include="lib\imgui\imstb_truetype.h" />
+    <ClInclude Include="lib\Memory.h" />
+    <ClInclude Include="lib\Modules.h" />
+    <ClInclude Include="lib\Offsets.h" />
+    <ClInclude Include="lib\Vector.h" />
+    <ClInclude Include="lib\WeaponsId.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="gui.cpp" />
-    <ClCompile Include="imgui\imgui.cpp" />
-    <ClCompile Include="imgui\imgui_demo.cpp" />
-    <ClCompile Include="imgui\imgui_draw.cpp" />
-    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
-    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
-    <ClCompile Include="imgui\imgui_tables.cpp" />
-    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="lib\imgui\imgui.cpp" />
+    <ClCompile Include="lib\imgui\imgui_demo.cpp" />
+    <ClCompile Include="lib\imgui\imgui_draw.cpp" />
+    <ClCompile Include="lib\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="lib\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="lib\imgui\imgui_tables.cpp" />
+    <ClCompile Include="lib\imgui\imgui_widgets.cpp" />
     <ClCompile Include="MainDll.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ddv.json" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -69,7 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -77,12 +80,12 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -128,7 +131,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\ddv3\ddv3\lib\imgui;C:\Users\Admin\Desktop\ddv3\ddv3\lib\json\include;C:\Users\Dima\Desktop\ddv3\ddv3\lib\json\include;C:\Users\Dima\Desktop\ddv3\ddv3\lib\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

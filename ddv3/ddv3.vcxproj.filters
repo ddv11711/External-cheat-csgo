@@ -27,85 +27,88 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassId.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="GlowObjectDefinition.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="GlowStyle.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="Team.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="State.h">
-      <Filter>Файлы ресурсов\SDK\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Memory.h">
-      <Filter>Файлы ресурсов</Filter>
-    </ClInclude>
-    <ClInclude Include="Offsets.h">
-      <Filter>Файлы ресурсов</Filter>
-    </ClInclude>
-    <ClInclude Include="Includer.h">
-      <Filter>Файлы ресурсов</Filter>
-    </ClInclude>
-    <ClInclude Include="Modules.h">
-      <Filter>Файлы ресурсов</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine.h">
-      <Filter>Файлы ресурсов\SDK\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="ClientState.h">
-      <Filter>Файлы ресурсов\SDK\Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Client.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="GlowObjectManager.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="LocalPlayer.h">
-      <Filter>Файлы ресурсов\SDK\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="WeaponsId.h">
-      <Filter>Файлы ресурсов</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector.h">
-      <Filter>Файлы ресурсов</Filter>
-    </ClInclude>
-    <ClInclude Include="gui.h">
+    <ClInclude Include="lib\font.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_truetype.h">
+    <ClInclude Include="CDK\Engine\State.h">
+      <Filter>Файлы ресурсов\SDK\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Engine\Engine.h">
+      <Filter>Файлы ресурсов\SDK\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Engine\ClientState.h">
+      <Filter>Файлы ресурсов\SDK\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\Team.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\Player.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\LocalPlayer.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\GlowStyle.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\GlowObjectManager.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\GlowObjectDefinition.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\Client.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\Entity.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CDK\Client\ClassId.h">
+      <Filter>Файлы ресурсов\SDK\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Memory.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Offsets.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Modules.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Vector.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\WeaponsId.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Includer.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imstb_truetype.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_textedit.h">
+    <ClInclude Include="lib\imgui\imstb_textedit.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imstb_rectpack.h">
+    <ClInclude Include="lib\imgui\imstb_rectpack.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_internal.h">
+    <ClInclude Include="lib\imgui\imgui_internal.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_win32.h">
+    <ClInclude Include="lib\imgui\imgui_impl_win32.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_dx9.h">
+    <ClInclude Include="lib\imgui\imgui_impl_dx9.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui.h">
+    <ClInclude Include="lib\imgui\imconfig.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imconfig.h">
+    <ClInclude Include="lib\imgui\imgui.h">
       <Filter>imgui</Filter>
     </ClInclude>
   </ItemGroup>
@@ -113,29 +116,29 @@
     <ClCompile Include="MainDll.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+    <ClCompile Include="lib\imgui\imgui.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_widgets.cpp">
+    <ClCompile Include="lib\imgui\imgui_draw.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_tables.cpp">
+    <ClCompile Include="lib\imgui\imgui_demo.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+    <ClCompile Include="lib\imgui\imgui_impl_dx9.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_draw.cpp">
+    <ClCompile Include="lib\imgui\imgui_impl_win32.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_demo.cpp">
+    <ClCompile Include="lib\imgui\imgui_tables.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui.cpp">
+    <ClCompile Include="lib\imgui\imgui_widgets.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="gui.cpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ddv.json" />
   </ItemGroup>
 </Project>

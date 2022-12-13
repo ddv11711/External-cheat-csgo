@@ -9,19 +9,22 @@
 #include <cmath>
 #include <array>
 #include <thread>
+#include <chrono>
+#include <fstream>
+#include <nlohmann/json.hpp>
 
 #include "Memory.h"
-#include "Offsets.h"
-#include "Vector.h"
-#include "Modules.h"
-#include "Client.h"
-#include "Engine.h"
-#include "GlowStyle.h"
-#include "Entity.h"
-#include "Player.h"
-#include "WeaponsId.h"
-#include "gui.h"
-#include "Modules.h"
+#include "lib/Offsets.h"
+#include "lib/Vector.h"
+#include "lib/Modules.h"
+#include "CDK/Client/Client.h"
+#include "CDK/Engine/Engine.h"
+#include "CDK/Client/GlowStyle.h"
+#include "CDK/Client/Entity.h"
+#include "CDK/Client/Player.h"
+#include "lib/WeaponsId.h"
+#include "lib/font.h"
+#include "lib/gui.h"
 
 
 
